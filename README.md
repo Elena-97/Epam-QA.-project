@@ -1,2 +1,2 @@
 # Epam-QA.-project
-This repository contain automation test 
+This repository contain automation tests
