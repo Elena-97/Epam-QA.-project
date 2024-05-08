@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="1" skipped="0">
+  <testsuite name="PasteBin" timestamp="2024-05-07T21:31:19" time="11.54" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="PasteBin"/>
+      <property name="capabilities" value="chrome.124_0_6367_119.windows"/>
+      <property name="file" value="file:///C:/Users/Elena/Epam/WB/test/specs/PasteBin.js"/>
+    </properties>
+    <testcase classname="chrome.124_0_6367_119.windows.PasteBin" name="tests PasteBin" time="11.538">
+      <failure/>
+      <error message="Can't call click on element with selector &quot;#postform-text&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/window/rect - {"x":null,"y":null,"width":958,"height":729}
+RESULT: {"x":null,"y":null,"width":958,"height":729}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/url - {"url":"https://pastebin.com/mdwXCDYX"}
+RESULT: {"url":"https://pastebin.com/mdwXCDYX"}
+COMMAND: GET /session/d799f00ed7eef92c83cdf39288a5c87a/url - {}
+RESULT: {}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/element - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/elements - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/elements - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/elements - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/elements - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/elements - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/elements - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/elements - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/elements - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/elements - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/elements - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/elements - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/elements - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/elements - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/elements - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/elements - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/elements - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/elements - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/elements - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/elements - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/d799f00ed7eef92c83cdf39288a5c87a/elements - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: DELETE /session/d799f00ed7eef92c83cdf39288a5c87a - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call click on element with selector "#postform-text" because element wasn't found
+    at async Context.<anonymous> (C:\Users\Elena\Epam\WB\test\specs\PasteBin.js:6:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
