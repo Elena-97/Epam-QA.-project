@@ -1,18 +1,23 @@
+const assert = require('assert');
+const PastebinPage = require('./pastebinPage');
+
 describe("task2", () => {
   it("tests task2", async () => {
-    await browser.setWindowSize(958, 728)
-    await browser.url("https://pastebin.com/")
-    await expect(browser).toHaveUrl("https://pastebin.com/")
-    await browser.$("#postform-text").click()
-    await browser.$("#postform-text").setValue("git config --global user.name  \"New Sheriff in Town\"\ngit reset $(git commit-tree HEAD^{tree} -m \"Legacy code\")\ngit push origin master --force\n")
-    await browser.$("#select2-postform-format-container").click()
-    await browser.$("/html/body/span[2]/span/span[1]/input").setValue("bash")
-    await browser.$("#select2-postform-expiration-container").click()
-    await browser.$("#select2-postform-status-container").click()
-    await browser.$("#postform-name").click()
-    await browser.$("#postform-name").setValue("how to gain dominance among developers")
-    await browser.$("aria/Create New Paste").click()
-    await expect(browser).toHaveUrl("https://pastebin.com/")
-    await browser.$("aria/AGREE").click()
-  });
+
+        PastebinPage.createNewPaste(
+            'git config --global user.name  "New Sheriff in Town"\n' +
+            'git reset $(git commit-tree HEAD^{tree} -m "Legacy code")\n' +
+            'git push origin master --force',
+            'Bash',
+            '10 Minutes',
+            'how to gain dominance among developers'
+        );
+
+        assert.strictEqual(browser.getTitle(), 'how to gain dominance among developers');
+        const codeText = PastebinPage.codeInput.getValue();
+        assert.strictEqual(codeText, 'git config --global user.name  "New Sheriff in Town"\n' +
+            'git reset $(git commit-tree HEAD^{tree} -m "Legacy code")\n' +
+            'git push origin master --force');
+    });
 });
+
